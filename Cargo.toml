@@ -1,0 +1,18 @@
+[package]
+name = "bevy_event_set"
+version = "0.1.0"
+authors = ["Wouter Buckens <wouter@epicteddy.com>"]
+edition = "2018"
+
+description = "A macro to create event bundles for Bevy"
+repository = "https://github.com/woubuc/bevy-event-set/"
+license = "MIT"
+
+keywords = ["bevy", "bevyengine", "events", "utility", "macro"]
+categories = ["game-development"]
+
+[dependencies]
+bevy = { version = "0.4", default-features = false }
+
+[patch.crates-io]
+bevy_ecs_macros = { git = "https://github.com/woubuc/bevy", branch = "fix/ecs-macro-systemparam-0.4" }
