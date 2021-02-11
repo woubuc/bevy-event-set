@@ -5,6 +5,9 @@
 //! event_set!([name] { [...events] });
 //! ```
 //!
+//! This will create a struct that can be used to send events of all given
+//! types through the [`SendEvent`] trait.
+//!
 //! # Example
 //! ```
 //! # use bevy::prelude::*;
@@ -59,7 +62,7 @@ macro_rules! event_set {
 pub trait SendEvent<T> {
 	/// Sends an event to the event buffer
 	///
-	/// Calls `Events.send` on the Bevy event buffer of the corresponding type.
+	/// Calls [`Events.send`](bevy::app::Events::send()) on the Bevy event buffer of the corresponding type.
 	fn send(&mut self, event: T);
 }
 
