@@ -1,5 +1,5 @@
 # bevy_event_set
-A macro to create event bundles for Bevy
+A macro to create event bundles for Bevy 0.4
 
 [![Crates.io](https://img.shields.io/crates/v/bevy_event_set?style=flat-square)](https://crates.io/crates/bevy_event_set)
 [![GitHub](https://img.shields.io/github/license/woubuc/bevy-event-set?style=flat-square)](https://github.com/woubuc/bevy-event-set/blob/main/LICENSE.txt)
@@ -13,8 +13,14 @@ With the `event_set` macro, you can create an event set that allows you to send
 multiple event types.
 
 ## Setup
+Add the crate to your `Cargo.toml` dependencies:
+```toml
+[dependencies]
+bevy_event_set = "0.1"
+```
+
 A bug in a subcrate of Bevy 0.4 prevents this crate from working properly. Add
-the following patch to your Cargo.toml to apply the fix:
+the following patch to your `Cargo.toml` to apply the fix:
 
 ```toml
 [patch.crates-io]
