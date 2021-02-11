@@ -1,6 +1,9 @@
 # bevy_event_set
 A macro to create event bundles for Bevy
 
+[![Crates.io](https://img.shields.io/crates/v/bevy_event_set?style=flat-square)](https://crates.io/crates/bevy_event_set)
+[![GitHub](https://img.shields.io/github/license/woubuc/bevy-event-set?style=flat-square)](https://github.com/woubuc/bevy-event-set/blob/main/LICENSE.txt)
+
 Standard practice in Bevy currently is declaring events as an enum. This is
 fine for many use cases, but in some situations you want to be able to listen
 for individual events in your systems while still being able to easily send
