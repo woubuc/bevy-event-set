@@ -29,7 +29,6 @@ bevy_ecs_macros = { git = "https://github.com/woubuc/bevy", branch = "fix/ecs-ma
 
 This bug is fixed in Bevy with PR [#1434](https://github.com/bevyengine/bevy/pull/1434).
 
-
 ## Usage
 ```rust
 use bevy::prelude::*;
@@ -55,3 +54,8 @@ fn event_one_listener_system(events: Res<Events<EventOne>>) { }
 fn event_two_listener_system(events: Res<Events<EventTwo>>) { }
 fn event_three_listener_system(events: Res<Events<EventThree>>) { }
 ```
+
+## Notes
+- Supports Bevy 0.4
+- Basically works, but keep in mind that the code is very basic
+- I welcome contributions to make this a little more versatile/user-friendly
