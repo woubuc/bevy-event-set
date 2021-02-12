@@ -53,6 +53,10 @@ fn event_emitter_system(mut events: MyEvents) {
 fn event_one_listener_system(events: Res<Events<EventOne>>) { }
 fn event_two_listener_system(events: Res<Events<EventTwo>>) { }
 fn event_three_listener_system(events: Res<Events<EventThree>>) { }
+
+// Add the event set to your app
+App::build()
+    .add_event_set::<MyEvents>();
 ```
 
 ## Notes
