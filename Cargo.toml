@@ -1,6 +1,6 @@
 [package]
 name = "bevy_event_set"
-version = "0.1.1"
+version = "0.2.0"
 authors = ["Wouter Buckens <wouter@epicteddy.com>"]
 edition = "2018"
 
