@@ -16,7 +16,7 @@ multiple event types.
 Add the crate to your `Cargo.toml` dependencies:
 ```toml
 [dependencies]
-bevy_event_set = "0.1"
+bevy_event_set = "0.2"
 ```
 
 A bug in a subcrate of Bevy 0.4 prevents this crate from working properly. Add
